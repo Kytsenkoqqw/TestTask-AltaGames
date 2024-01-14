@@ -4,17 +4,17 @@ using System.ComponentModel;
 using UnityEngine;
 using Zenject;
 
-namespace Player.Zenject
+
 public class BallInstaller : MonoInstaller
 {
     [SerializeField] private PlayerBehaviour _playerBehaviour;
-    
-        public override void InstallBindings()
+
+    public override void InstallBindings()
         {
             Container
-                .Bind<PlayerBehaviour>()
+                .BindInterfacesTo<PlayerBehaviour>()
                 .FromInstance(_playerBehaviour)
                 .AsSingle();
         }
-    }
+    
 }

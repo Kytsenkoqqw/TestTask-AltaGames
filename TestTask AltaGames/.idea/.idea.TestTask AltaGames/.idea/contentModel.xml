@@ -928,9 +928,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Finish" t="Include">
+            <e p="Finish.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IPlayerBehaviour.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="MoveBall.cs" t="Include" />
             <e p="PlayerBehaviour.cs" t="Include" />
+            <e p="ScaleBallUp.cs" t="Include" />
             <e p="Zenject" t="Include">
               <e p="BallInstaller.cs" t="Include" />
             </e>
