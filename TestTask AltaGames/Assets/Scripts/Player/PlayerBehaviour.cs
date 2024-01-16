@@ -64,7 +64,7 @@ public class PlayerBehaviour : MonoBehaviour, IPlayerBehaviour
 
         if (newScale.x <= 0.1f)
         {
-            Destroy(gameObject);
+            Time.timeScale = 0f;
         }
     }
 }
