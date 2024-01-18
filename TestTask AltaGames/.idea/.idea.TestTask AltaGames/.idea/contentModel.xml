@@ -932,9 +932,11 @@
             <e p="Finish.cs" t="Include" />
           </e>
           <e p="Obstacle" t="Include">
+            <e p="Obstacle.cs" t="Include" />
             <e p="ObstaclesSpawn.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
+            <e p="DestroyObstacles.cs" t="Include" />
             <e p="Interfaces" t="Include">
               <e p="IPlayerBehaviour.cs" t="Include" />
             </e>
