@@ -30,18 +30,18 @@ public class PlayerBehaviour : MonoBehaviour, IPlayerBehaviour
             return;    
         }
         
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
         {
             SpawnBall();
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
         {
             _scriptScaleBallUp.ScaleUp(_scalseSpeed);
             ScaleDown(_scalseSpeed);
         }
         
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
         {
             OnPushBall?.Invoke();
         }

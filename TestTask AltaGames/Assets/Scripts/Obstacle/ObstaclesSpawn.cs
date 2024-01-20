@@ -27,7 +27,8 @@ public class ObstaclesSpawn : MonoBehaviour
             Vector3 randomCirclePoint = UnityEngine.Random.insideUnitCircle * _spawnRadius;
             Vector3 spawnPoint = new Vector3(randomCirclePoint.x + _spawnPoint.position.x, _spawnPoint.position.y, randomCirclePoint.y + _spawnPoint.position.z);
 
-            var spawnedObstacle =  Instantiate(_obstaclePrefab, spawnPoint, Quaternion.identity);
+            float randomRotationY = UnityEngine.Random.Range(0f, 360f);
+            var spawnedObstacle =  Instantiate(_obstaclePrefab, spawnPoint, Quaternion.Euler(0, randomRotationY,0 ));
             _transformsPoint.Add(spawnedObstacle);
             Collider[] colliders = Physics.OverlapSphere(spawnedObstacle.position, _radiusObstacle, _layerMaskObstacle);
 
