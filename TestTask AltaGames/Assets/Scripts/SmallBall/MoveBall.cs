@@ -11,7 +11,7 @@ namespace DefaultNamespace
     public class MoveBall : MonoBehaviour
     {
         public bool IsMoved => _pushStartCoroutine != null;
-        private Coroutine _pushStartCoroutine;
+        private Coroutine _pushStartCoroutine; //кэширование корутны 
         [Inject] private IPlayerBehaviour _playerBehaviour;
         private Vector3 _roadBall = new Vector3(1,0,0);
         [SerializeField] private float _speed;

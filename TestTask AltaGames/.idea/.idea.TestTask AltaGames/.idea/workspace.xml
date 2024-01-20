@@ -30,10 +30,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F7237CF7-ABEF-49BF-BB55-2D7EB076E422/71/43adf7e6/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/ScaleBallUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SmallBall/ScaleBallUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacle/ObstaclesSpawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F6650F70-2D12-47C2-A531-1A89B759BA03/a2/4ee3bb14/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Zenject/BallInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,6 +51,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacle/ObstaclesSpawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/DestroyObstacles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SmallBall/MoveBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PushBall.cs" />
       </list>
     </option>
   </component>
@@ -100,7 +104,8 @@
       <workItem from="1705008197932" duration="1694000" />
       <workItem from="1705234279370" duration="9482000" />
       <workItem from="1705410080993" duration="6502000" />
-      <workItem from="1705588877486" duration="2860000" />
+      <workItem from="1705588877486" duration="3698000" />
+      <workItem from="1705758635168" duration="2693000" />
     </task>
     <servers />
   </component>
