@@ -5,23 +5,47 @@ using Player;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject _pauseMenu;
     [SerializeField] private Button _pushBall;
+    [SerializeField] private GameObject _loseMenu;
+    [SerializeField] private Button _restartButton;
     [Inject] private PushBall _push;
+    [Inject] private PlayerBehaviour _playerBehaviour;
+
+    private void Start()
+    {
+        _push.OnLoseMenu += LoseMenu;
+        _playerBehaviour.OnBallScaleDown += LoseMenu;
+    }
 
     private void OnEnable()
     {
         _pushBall.onClick.AddListener(_push.StartMove);
+        _restartButton.onClick.AddListener(RestartGame);
     }
 
     private void OnDisable()
     {
         _pushBall.onClick.RemoveListener(_push.StartMove);
+        _restartButton.onClick.RemoveListener(RestartGame);
     }
 
+    private void OnDestroy()
+    {
+        _push.OnLoseMenu -= LoseMenu;
+        _playerBehaviour.OnBallScaleDown -= LoseMenu;
+    }
+
+    private void LoseMenu()
+    {
+        _loseMenu.SetActive(true);
+        Time.timeScale = 0;
+    }
+    
     public void Resume()
     {
         if (Time.timeScale !=1)
@@ -31,10 +55,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void WinMennu()
+    private void RestartGame()
     {
-        
+        SceneManager.LoadScene("GameScene");
+        Time.timeScale = 1;
+        Debug.Log("ReloadScene");
     }
-
-
 }

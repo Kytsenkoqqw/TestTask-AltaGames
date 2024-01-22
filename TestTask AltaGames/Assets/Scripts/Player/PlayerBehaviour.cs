@@ -10,10 +10,14 @@ using Zenject;
 
 public class PlayerBehaviour : MonoBehaviour, IPlayerBehaviour
 {
+    public event Action OnPushBall;
+    public event Action OnBallScaleDown;
+    
+    public GameObject BallPrefab;
+    
     [Inject] private DiContainer _diContainer;
     [SerializeField] private float _scalseSpeed;
-    public event Action OnPushBall;
-    public GameObject BallPrefab;
+    
     private Vector3 _positionSpawn;
     private MoveBall _spawnedBall;
     private ScaleBallUp _scriptScaleBallUp;
@@ -64,6 +68,7 @@ public class PlayerBehaviour : MonoBehaviour, IPlayerBehaviour
 
         if (newScale.x <= 0.1f)
         {
+            OnBallScaleDown?.Invoke();
             Time.timeScale = 0f;
         }
     }

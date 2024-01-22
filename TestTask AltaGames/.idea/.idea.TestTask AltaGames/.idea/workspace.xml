@@ -41,10 +41,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F7237CF7-ABEF-49BF-BB55-2D7EB076E422/71/43adf7e6/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SmallBall/ScaleBallUp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacle/ObstaclesSpawn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F6650F70-2D12-47C2-A531-1A89B759BA03/a2/4ee3bb14/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Zenject/BallInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/MaterialReferenceManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -60,11 +62,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/MoveBall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/DestroyObstacles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SmallBall/MoveBall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PushBall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacle/ObstaclesSpawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Zenject/BallInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PushBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Interfaces/IPlayerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -119,6 +122,7 @@
       <workItem from="1705588877486" duration="3698000" />
       <workItem from="1705758635168" duration="5354000" />
       <workItem from="1705802000149" duration="865000" />
+      <workItem from="1705926922698" duration="2991000" />
     </task>
     <servers />
   </component>

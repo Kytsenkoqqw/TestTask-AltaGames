@@ -7,6 +7,7 @@ namespace Player
 {
     public class PushBall : MonoBehaviour
     {
+        public event Action OnLoseMenu;
         [SerializeField] private float _speed;
         private Coroutine _pushStartCoroutine;
         private Vector3 _roadBall = new Vector3(1,0,0);
@@ -30,6 +31,7 @@ namespace Player
             if (collision.gameObject.GetComponent<Obstacle>())
             {
                 Debug.Log("Obstacle");
+                OnLoseMenu?.Invoke();
                 Destroy(gameObject);
             }
         }
